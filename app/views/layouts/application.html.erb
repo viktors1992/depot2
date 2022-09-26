@@ -23,7 +23,9 @@
           <li><a href="/news">News</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
+        <div> <p style="color:white;text-align:center;"> <%= Time.now %></p> </div>
       </nav>
+      
       <main class='<%= controller.controller_name %>'>
         <%= yield %>
       </main>
