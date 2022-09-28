@@ -13,7 +13,11 @@
   <body>
     <header class="main">
       <%= image_tag 'logo.svg', alt: 'The Pragmatic Bookshelf' %>
+             <p style="color:white;text-align:right; margin-right: 50px; padding-bottom: 20px; margin-bottom: 0px;"> 
+        <%= Time.now.strftime("%d/%m/%Y %H:%M")%>
+       </p>
       <h1><%= @page_title %></h1>
+
     </header>
     <section class="content">
       <nav class="side_nav">
@@ -23,7 +27,7 @@
           <li><a href="/news">News</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
-        <div> <p style="color:white;text-align:center;"> <%= Time.now %></p> </div>
+        
       </nav>
       
       <main class='<%= controller.controller_name %>'>
