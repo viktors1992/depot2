@@ -1,5 +1,6 @@
 class StoreController < ApplicationController
-  before_action :session_counter
+  before_action :session_counter, only: :index
+  #before action :reset_counter, only: :create
   def session_counter 
 
       if session[:counter].nil?  #|| @line_item
